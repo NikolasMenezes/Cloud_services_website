@@ -27,11 +27,13 @@ textarea {
     padding: 10px;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     outline-color: #ddd;
 }
 
-input:hover, textarea:hover {
+input:hover,
+textarea:hover {
     background-color: #ddd;
 }
 
@@ -327,7 +329,7 @@ a:hover {
 }
 
 #contact-form input[type="text"],
-input[type="email"], 
+input[type="email"],
 textarea {
     width: 45%;
     border: none;
@@ -375,30 +377,31 @@ textarea::placeholder {
 
 /* Modal Login */
 
-button{
+button {
     pointer-events: all;
 }
-button:hover{
+
+button:hover {
     opacity: 0.8;
 }
 
-#modal-header h4{
+#modal-header h4 {
     color: #333;
     font-size: 22px;
 }
 
 #fade,
 #modal-login {
-  transition: 0.5s;
-  opacity: 1;
-  pointer-events: all;
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
 }
 
-input:focus{
-    outline-color:#888;
+input:focus {
+    outline-color: #888;
 }
 
-#open-modal{
+#open-modal {
     width: 100px;
     background-color: #2CC76A;
     padding: 15px 20px;
@@ -407,17 +410,18 @@ input:focus{
 
 
 
-#close-modal{
+#close-modal {
     width: 30px;
     height: 30px;
-    border-radius: 50%;;
+    border-radius: 50%;
+    ;
     border: none;
     color: #FDFDFD;
     background-color: #888;
     cursor: pointer;
 }
 
-#fade{
+#fade {
     width: 100%;
     height: 100%;
     position: fixed;
@@ -427,7 +431,7 @@ input:focus{
     z-index: 5;
 }
 
-#modal-login{
+#modal-login {
     position: fixed;
     width: 700px;
     max-width: 90%;
@@ -440,7 +444,7 @@ input:focus{
     border-radius: .25rem;
 }
 
-#modal-header{
+#modal-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -449,7 +453,8 @@ input:focus{
     padding-bottom: 1.2rem;
 }
 
-#modal-body input[type="email"], #modal-body input[type="password"]{
+#modal-body input[type="email"],
+#modal-body input[type="password"] {
     width: 80%;
     margin-bottom: 10px;
     padding: 10px;
@@ -460,11 +465,12 @@ input:focus{
     border: 1px solid #ddd;
 }
 
-#modal-body input[type="email"]:hover, #modal-body input[type="password"]:hover{
+#modal-body input[type="email"]:hover,
+#modal-body input[type="password"]:hover {
     background-color: #ddd;
 }
 
-#modal-btn{
+#modal-btn {
     width: 80px;
     height: 40px;
     padding: .8rem;
@@ -480,12 +486,12 @@ input:focus{
     text-align: center;
 }
 
-#modal-btn:hover{
+#modal-btn:hover {
     opacity: 0.8;
 }
 
 #modal-login.hide,
-#fade.hide{
+#fade.hide {
     top: 0;
     opacity: 0;
     pointer-events: none;
@@ -498,4 +504,74 @@ input:focus{
     text-align: center;
     padding: 20px;
     color: #333;
+}
+
+/* Responsive */
+
+@media (max-width: 799px) {
+    #plans-container {
+        flex-wrap: wrap;
+    }
+
+    .plans {
+        margin-bottom: 20px;
+    }
+
+    #domain-form {
+        position: relative;
+        margin: auto;
+        width: 80%;
+    }
+
+    .contactus-container p {
+        width: 80%;
+        position: relative;
+        margin: 0 auto 20px auto;
+    }
+
+    #contact-form {
+        width: 80%;
+    }
+
+    #domain-form {
+        width: 90%;
+    }
+
+    #domain-form input[type="text"] {
+        width: 100%;
+        position: relative;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:550px) {
+    #specialties {
+        flex-wrap: wrap;
+    }
+
+    .searchdomain-container h2 {
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    #contact-form input[type="text"],
+    #contact-form input[type="email"],
+    #contact-form textarea {
+        width: 100%;
+        position: relative;
+        margin: 7px auto;
+    }
+}
+
+@media (max-width:370px) {
+    #domain-form {
+        width: 100%;
+    }
+
+    #domain-form input[type="text"],
+    #domain-form input[type="submit"] {
+        width: 110%;
+        position: relative;
+        margin: 0 auto;
+    }
 }
