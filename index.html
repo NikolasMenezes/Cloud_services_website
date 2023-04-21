@@ -10,23 +10,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="js/scripts.js" defer></script>
+    <script src="./js/scripts.js" defer></script>
+    <script src="./js/menu.js" defer></script>
 </head>
 
 <body>
     <div class="container">
         <header>
-            <div class="navbar-container">
-                <nav>
-                    <a href="#"><img src="img/hdchostlogo.png" alt="Logo hDC" id="logo"></a>
+                <nav class="navbar-container">
+                    <div class="logo">
+                        <a href="#"><img src="img/hdchostlogo.png" alt="Logo hDC" id="logo"></a>
+                    </div>
+
                     <ul class="list-items">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Planos</a></li>
                         <li><a href="#">Contato</a></li>
                         <li><a href="#" class="default-btn" id="open-modal">Login</a></li>
                     </ul>
+
+                    <div class="menu-toggle">
+                        <img src="./img/menu_white_36dp.svg">
+                    </div>
+
+                    <div class="mobile-menu-items off">
+                        <ul class="mobile-menu-links">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Planos</a></li>
+                            <li><a href="#">Contato</a></li>
+                        </ul>
+                    </div>
                 </nav>
-            </div>
+
             <div id="banner-container">
                 <h1 id="main-title">Cloud Services</h1>
                 <p id="main-subtitle">Os melhores planos para qualquer tipo de projeto!</p>
