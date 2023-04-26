@@ -9,10 +9,10 @@ menuToggle.addEventListener("click", () => {
   menuItems.classList.toggle("off")
 
   if (menuToggle.classList.contains("on")) {
-    menuIcon.setAttribute("src", "../img/close_white_36dp.svg")
+    menuIcon.setAttribute("src", "./img/close_white_36dp.svg")
     body.style.overflow = "hidden"
   } else {
-    menuIcon.setAttribute("src", "../img/menu_white_36dp.svg")
+    menuIcon.setAttribute("src", "./img/menu_white_36dp.svg")
     body.style.overflow = "initial"
   }
 })
